@@ -8,7 +8,7 @@ from .forms import CommentaryForm
 class IndexView(generic.ListView):
     model = Post
     template_name = "blog/index.html"
-    context_object_name = "posts"
+    context_object_name = "post_list"
     ordering = ["-created_time"]
     paginate_by = 5
 
